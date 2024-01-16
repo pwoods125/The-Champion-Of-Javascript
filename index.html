@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>The Champion of JavaScript!</title>
+  </head>
+  <body>
+    <div>
+      <header>
+        <h1>The Champion of JavaScript!</h1> 
+      </header>
+    </div>
+    <div>
+      <h2 id="newchallenger"> Are you the champion of JavaScript? Prove it by taking the JavaScript Champion Quiz! Press the start key when you're ready! Good Luck!</h2>
+      <div id="Countdown"></div>
+    </div>
+    <div class="quizcontent">
+      <button id="Startbtn">Start</button>  
+      <div id="question-content" class="hide">
+        <h2 id="Questions">Questions</h2>
+        <div id="answerbtns" class="btngrid">
+      </div>
+    </div>
+    <div id="newscorecard" class="hide">
+      <h3>New Record</h2>
+      <form method="POST">
+        <div class="endgameresults">
+          <label for="playerinitals">Player Initials:</label>
+          <input type="text" name="playerinitals" id="playerinitals" placeholder="JSC" maxlength="3"/>
+        </div>
+        <div class="endgameresults">
+          <label for="totalscore">Total Score:</label>
+          <input readonly="totalscore" id="totalscore" placeholder="Your Score is here!">
+        <button id="postrecord">Post Record</button>
+        </div>
+      </form>
+    </div>
+    <div id="lastscorecard" class="hide">
+      <h3>Last Recorded Champion:</h3>
+      <p><strong>Player Initials:</strong> <span id="user-intials"></span></p>
+      <p><strong>Total Score:</strong> <span id="user-score"></span></p> 
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
