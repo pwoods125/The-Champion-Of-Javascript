@@ -4,21 +4,82 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url(https://i0.wp.com/blog.citeab.com/wp-content/uploads/2015/11/shutterstockgold_cup_for_winner.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: #FFFFFF
+}
+
+h1 {
+    text-align: center;
+    text-wrap: wrap;
+    margin: 50px;
+    padding: 25px;
+    font-size: 6vw;
+    color: rgb(255, 0, 0);
+    text-shadow: 1px 1px 2px red, 0 0 1em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
+    font-family:  Engravers MT, Showcard Gothic, Agency FB, Arial Rounded MT Bold, Copperplate Gothic Bold;
+}
+
+#newchallenger {
+    text-align: center;
+    text-wrap: wrap;
+    max-width: 800px; 
+    padding: 25px;
+    text-shadow: 1px 1px 2px red, 0 0 1em rgb(21, 0, 255), 0 0 0.2em rgb(21, 0, 255);
+    font-family:  Engravers MT, Showcard Gothic, Agency FB, Arial Rounded MT Bold, Copperplate Gothic Bold;
+}
+
+#Countdown {
+    border-radius: 5px;
+    padding: 10px;
+    max-width: max-content;
+    background-color: black;
+    color: white;
+    font-family: Impact,'Arial Narrow Bold', sans-serif;
+    font-size: large;
+}
+
+#Startbtn, #postrecord {
+    background-color: red;
+    border-radius: 2px;
+    box-shadow: 2px;
+    margin: 10px;
+    font-family: Showcard Gothic, Agency FB, Arial Rounded MT Bold, Copperplate Gothic Bold, Engravers MT;
+    font-size: xx-large;
+}
 
 .quizcontent {
-width: 800px;
-max-width: 80%;
-background-color: gold;
-border-radius: 5px;
-padding: 10px;
-box-shadow: 0 0 10px 2px;
+    margin: 25px;
+    width: 500px;
+    max-width: 80%;
+    background-color: blue;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+    flex-wrap: wrap;
 }
+
 
 .btngrid {
     display: grid;
-    grid-template-columns: repeat(2, auto);
     gap: 10px;
     margin: 20px 0;
+}
+
+.ansbtn {
+    background-color: gold;
+    border: 1px solid;
+    padding: 10px 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+}
+
+#newscorecard, #lastscorecard {
+    padding: 5px 10px;
+    font-size: large;
+    font-family:  Imprint MT Shadow, Georgia, 'Times New Roman', Times, serif ;
 }
 
 .hide {
