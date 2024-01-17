@@ -31,6 +31,8 @@ answerbtnsEl.addEventListener("click", () => {
 function startgame() {
     startbtn.classList.add("hide");
     questionContainer.classList.remove("hide");
+    challenger.classList.add("hide");
+    timerEl.classList.remove("hide"); 
 // THEN a timer starts
     countdown(interval);
     displayQuestions();
@@ -93,10 +95,10 @@ function answerselection(event){
 // WHEN all questions are answered or the timer reaches 0
 // THEN the game is over
 function gameover() {
-    challenger.classList.add("hide"); 
     questionContainer.classList.add("hide");
     newscorecardContainer.classList.remove("hide");
     lastscorecardContainer.classList.remove("hide");
+    timerEl.classList.add("hide");
     document.getElementById("totalscore").value = score;
     renderResults();
 }
@@ -116,7 +118,7 @@ function renderResults() {
 postbtn.addEventListener("click", function(event){
     event.preventDefault();
 
-    var newPlayerInitials = document.querySelector("#playerinitals").value;
+    var newPlayerInitials = document.querySelector("#playerinitials").value;
     var newPlayerScore = document.querySelector("#totalscore").value;
 
     localStorage.setItem("newPlayerInitials", newPlayerInitials);
